@@ -71,5 +71,5 @@ ReplicatedStorage.NanamiCheck.OnClientInvoke = function(Target, TimeDur, User)
         Debris:AddItem(ColorCorrection, .15);
     end;
     Debris:AddItem(TempGUI,.5);
-    return Temp3;
+    return Temp3
 end;
