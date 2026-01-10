@@ -4,7 +4,7 @@ until getgenv().Toggles;
 
 local Live = workspace:WaitForChild('Live');
 
-ReplicatedStorage.NanamiCheck.OnClientInvoke = function(Target, TimeDur, User)
+game:GetService('ReplicatedStorage').NanamiCheck.OnClientInvoke = function(Target, TimeDur, User)
     local TempGUI = ReplicatedStorage.NanamiCutGUI:Clone();
     TempGUI.MainBar.Rotation = -80;
     TempGUI.Parent = Live[Target.Name].HumanoidRootPart;
