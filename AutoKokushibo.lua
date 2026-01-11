@@ -2,6 +2,8 @@ repeat
     task.wait()
 until Toggles
 
+local v_u_100 = {};
+
 game.ReplicatedStorage.KokushiboCheck.OnClientInvoke = function(p101, p102)
     local v103 = p101 * 2
     local v104 = p102 * 2
@@ -84,6 +86,7 @@ game.ReplicatedStorage.KokushiboCheck.OnClientInvoke = function(p101, p102)
             }):Play()
         end
     end
+    log();
     game.Debris:AddItem(v_u_106, 0.65)
     for _, v116 in pairs(v_u_106:GetChildren()) do
         if v116.ImageTransparency ~= 1 then
